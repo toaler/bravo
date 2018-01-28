@@ -12,8 +12,7 @@ class StatusMenuController: NSObject, LatencyAPIDelegate {
         statusItem.title = "Bravo"
         statusItem.menu = statusMenu
         
-        latencyAPI = LatencyAPI(delegate: self)
-        
+        latencyAPI = LatencyAPI()
         
         let icon = NSImage(named: NSImage.Name(rawValue : "statusIcon"))
         statusItem.image = icon
@@ -23,11 +22,14 @@ class StatusMenuController: NSObject, LatencyAPIDelegate {
     }
     
     func updateLatency() {
-        latencyAPI.fetchLatency()
+        latencyAPI.fetchLatency { latency in
+            self.statusItem.title = "\(latency)"
+            NSLog("\(latency)")
+        }
     }
     
     @IBAction func updateClicked(_ sender: Any) {
-        latencyAPI.fetchLatency()
+        updateLatency()
     }
     
     @IBAction func quitClicked(_ sender: Any) {

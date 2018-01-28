@@ -5,14 +5,8 @@ protocol LatencyAPIDelegate {
 }
 
 class LatencyAPI {
-    var delegate: LatencyAPIDelegate?
-    
-    init(delegate: LatencyAPIDelegate) {
-        self.delegate = delegate
-    }
-    
-    func fetchLatency() {
-      self.delegate?.consumeLatency(12)
+    func fetchLatency(success: @escaping (Int) -> Void) {
+       success(12)
        NSLog("12")
     }
 }
