@@ -10,20 +10,19 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="bravo" customModuleProvider="target">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="bravo" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="BQ1-VZ-U86" customClass="StatusMenuController" customModule="bravo" customModuleProvider="target">
             <connections>
-                <outlet property="quitClicked" destination="5tx-71-hVM" id="bH2-f6-Gew"/>
-                <outlet property="statusMenu" destination="zGQ-km-JSh" id="EWn-MO-at8"/>
+                <outlet property="statusMenu" destination="zGQ-km-JSh" id="Yti-nO-94z"/>
             </connections>
         </customObject>
-        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="zGQ-km-JSh">
             <items>
-                <menuItem title="Quit" keyEquivalent="Q" id="5tx-71-hVM">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Quit" keyEquivalent="q" id="5tx-71-hVM">
                     <connections>
-                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="vkr-VR-wDp"/>
+                        <action selector="quitClicked:" target="BQ1-VZ-U86" id="M7a-QA-8fX"/>
                     </connections>
                 </menuItem>
             </items>
