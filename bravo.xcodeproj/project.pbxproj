@@ -11,6 +11,7 @@
 		EB1D1491201D4A5E0055276C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1D1490201D4A5E0055276C /* Assets.xcassets */; };
 		EB1D1494201D4A5E0055276C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1D1492201D4A5E0055276C /* MainMenu.xib */; };
 		EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149C201D98F10055276C /* StatusMenuController.swift */; };
+		EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149E201D9DDF0055276C /* LatencyAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EB1D1495201D4A5E0055276C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1D1496201D4A5E0055276C /* bravo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bravo.entitlements; sourceTree = "<group>"; };
 		EB1D149C201D98F10055276C /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		EB1D149E201D9DDF0055276C /* LatencyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				EB1D148E201D4A5E0055276C /* AppDelegate.swift */,
 				EB1D149C201D98F10055276C /* StatusMenuController.swift */,
+				EB1D149E201D9DDF0055276C /* LatencyAPI.swift */,
 				EB1D1490201D4A5E0055276C /* Assets.xcassets */,
 				EB1D1492201D4A5E0055276C /* MainMenu.xib */,
 				EB1D1495201D4A5E0055276C /* Info.plist */,
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */,
 				EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */,
 				EB1D148F201D4A5E0055276C /* AppDelegate.swift in Sources */,
 			);

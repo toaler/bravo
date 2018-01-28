@@ -20,7 +20,15 @@
         </customObject>
         <menu id="zGQ-km-JSh">
             <items>
-                <menuItem title="Quit" keyEquivalent="q" id="5tx-71-hVM">
+                <menuItem title="Update" keyEquivalent="U" id="6eZ-0H-aQY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="BQ1-VZ-U86" id="F6Q-Jx-l7z"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="wKB-mx-W32"/>
+                <menuItem title="Quit" keyEquivalent="Q" id="5tx-71-hVM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="quitClicked:" target="BQ1-VZ-U86" id="M7a-QA-8fX"/>
                     </connections>
