@@ -12,6 +12,7 @@
 		EB1D1494201D4A5E0055276C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1D1492201D4A5E0055276C /* MainMenu.xib */; };
 		EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149C201D98F10055276C /* StatusMenuController.swift */; };
 		EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149E201D9DDF0055276C /* LatencyAPI.swift */; };
+		EB1D14A2201DBEF80055276C /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1D14A1201DBEF80055276C /* SimplePing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		EB1D1496201D4A5E0055276C /* bravo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bravo.entitlements; sourceTree = "<group>"; };
 		EB1D149C201D98F10055276C /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		EB1D149E201D9DDF0055276C /* LatencyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyAPI.swift; sourceTree = "<group>"; };
+		EB1D14A0201DBEF80055276C /* SimplePing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		EB1D14A1201DBEF80055276C /* SimplePing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				EB1D1492201D4A5E0055276C /* MainMenu.xib */,
 				EB1D1495201D4A5E0055276C /* Info.plist */,
 				EB1D1496201D4A5E0055276C /* bravo.entitlements */,
+				EB1D14A1201DBEF80055276C /* SimplePing.m */,
+				EB1D14A0201DBEF80055276C /* SimplePing.h */,
 			);
 			path = bravo;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				TargetAttributes = {
 					EB1D148A201D4A5E0055276C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +146,7 @@
 				EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */,
 				EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */,
 				EB1D148F201D4A5E0055276C /* AppDelegate.swift in Sources */,
+				EB1D14A2201DBEF80055276C /* SimplePing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = bravo/bravo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -274,6 +282,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.bpt.bravo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bravo/bravo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -282,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = bravo/bravo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -289,6 +300,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.bpt.bravo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bravo/bravo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

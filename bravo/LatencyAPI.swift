@@ -5,8 +5,9 @@ protocol LatencyAPIDelegate {
 }
 
 class LatencyAPI {
-    func fetchLatency(success: @escaping (Int) -> Void) {
-       success(12)
-       NSLog("12")
+    func fetchLatency(completion: @escaping (Double) -> Void) {
+        let timeInterval = NSDate().timeIntervalSince1970
+        NSLog("\(timeInterval)")
+        completion(timeInterval)
     }
 }
