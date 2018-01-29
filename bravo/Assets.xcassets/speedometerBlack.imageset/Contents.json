@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "speedometer.small.png",
+      "filename" : "speedometer.black.18.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "speedometer.large.png",
+      "filename" : "speedometer.black.36.png",
       "scale" : "2x"
     },
     {

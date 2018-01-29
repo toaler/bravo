@@ -6,6 +6,12 @@ class StatusMenuController: NSObject, LatencyAPIDelegate {
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
+    let iconBlack = NSImage(named: NSImage.Name(rawValue : "speedometerBlack"))
+    let iconRed = NSImage(named: NSImage.Name(rawValue : "speedometerRed"))
+    let iconOrange = NSImage(named: NSImage.Name(rawValue : "speedometerOrange"))
+    let iconGreen = NSImage(named: NSImage.Name(rawValue : "speedometerGreen"))
+    let iconGold = NSImage(named: NSImage.Name(rawValue : "speedometerGold"))
+    
     var latencyAPI : LatencyAPI!
     var timer: Timer?
     
@@ -18,8 +24,8 @@ class StatusMenuController: NSObject, LatencyAPIDelegate {
         
         latencyAPI = LatencyAPI()
         
-        let icon = NSImage(named: NSImage.Name(rawValue : "statusIcon"))
-        statusItem.image = icon
+        
+        statusItem.image = iconBlack
         statusItem.menu = statusMenu
         
         enableTimer()
@@ -42,8 +48,27 @@ class StatusMenuController: NSObject, LatencyAPIDelegate {
     }
     
     @objc func updateLatency() {
-        latencyAPI.fetchLatency { latency in
+        latencyAPI.fetchLatency { l in
+            let latency = Int(l)
             self.statusItem.title = "\(latency)"
+            
+            if latency < 100 {
+                if latency < 50 {
+                    if latency < 15 {
+                        self.statusItem.image = self.iconGreen
+                    }
+                    else {
+                      self.statusItem.image = self.iconGold
+                    }
+                }
+                else {
+                  self.statusItem.image = self.iconOrange
+                }
+            }
+            else {
+                self.statusItem.image = self.iconRed
+            }
+
             NSLog("\(latency)")
         }
     }
