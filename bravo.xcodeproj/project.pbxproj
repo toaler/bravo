@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B99830F7B438A1D36EC5A4A /* Pods_bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDFBF49A1B53FF6C06FC92D /* Pods_bravo.framework */; };
 		EB1D148F201D4A5E0055276C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D148E201D4A5E0055276C /* AppDelegate.swift */; };
 		EB1D1491201D4A5E0055276C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1D1490201D4A5E0055276C /* Assets.xcassets */; };
 		EB1D1494201D4A5E0055276C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1D1492201D4A5E0055276C /* MainMenu.xib */; };
 		EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149C201D98F10055276C /* StatusMenuController.swift */; };
 		EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D149E201D9DDF0055276C /* LatencyAPI.swift */; };
-		EB1D14A2201DBEF80055276C /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1D14A1201DBEF80055276C /* SimplePing.m */; };
+		EB39FEFD201F0FC600EE7051 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EB39FEFC201F0FC600EE7051 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03F503401561EE35E6BD49A3 /* Pods-bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bravo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bravo/Pods-bravo.debug.xcconfig"; sourceTree = "<group>"; };
+		5FDFBF49A1B53FF6C06FC92D /* Pods_bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685974F135B148123E29C893 /* Pods-bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bravo.release.xcconfig"; path = "Pods/Target Support Files/Pods-bravo/Pods-bravo.release.xcconfig"; sourceTree = "<group>"; };
 		EB1D148B201D4A5E0055276C /* bravo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bravo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1D148E201D4A5E0055276C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB1D1490201D4A5E0055276C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,8 +28,8 @@
 		EB1D1496201D4A5E0055276C /* bravo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bravo.entitlements; sourceTree = "<group>"; };
 		EB1D149C201D98F10055276C /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		EB1D149E201D9DDF0055276C /* LatencyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyAPI.swift; sourceTree = "<group>"; };
-		EB1D14A0201DBEF80055276C /* SimplePing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		EB1D14A1201DBEF80055276C /* SimplePing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		EB39FEFC201F0FC600EE7051 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EB524854201F072E000529E0 /* bravo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bravo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B99830F7B438A1D36EC5A4A /* Pods_bravo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45B1CDF51CECF3E780CE9DFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03F503401561EE35E6BD49A3 /* Pods-bravo.debug.xcconfig */,
+				685974F135B148123E29C893 /* Pods-bravo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E40AB511BEAD113CE3B5DC45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FDFBF49A1B53FF6C06FC92D /* Pods_bravo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB1D1482201D4A5E0055276C = {
 			isa = PBXGroup;
 			children = (
+				EB39FEFC201F0FC600EE7051 /* Podfile */,
 				EB1D148D201D4A5E0055276C /* bravo */,
 				EB1D148C201D4A5E0055276C /* Products */,
+				45B1CDF51CECF3E780CE9DFB /* Pods */,
+				E40AB511BEAD113CE3B5DC45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +90,7 @@
 				EB1D1492201D4A5E0055276C /* MainMenu.xib */,
 				EB1D1495201D4A5E0055276C /* Info.plist */,
 				EB1D1496201D4A5E0055276C /* bravo.entitlements */,
-				EB1D14A1201DBEF80055276C /* SimplePing.m */,
-				EB1D14A0201DBEF80055276C /* SimplePing.h */,
+				EB524854201F072E000529E0 /* bravo-Bridging-Header.h */,
 			);
 			path = bravo;
 			sourceTree = "<group>";
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB1D1499201D4A5E0055276C /* Build configuration list for PBXNativeTarget "bravo" */;
 			buildPhases = (
+				D941C14D31421FF81BAAC5F3 /* [CP] Check Pods Manifest.lock */,
 				EB1D1487201D4A5E0055276C /* Sources */,
 				EB1D1488201D4A5E0055276C /* Frameworks */,
 				EB1D1489201D4A5E0055276C /* Resources */,
+				DB98EDBDFF7EC822EF354124 /* [CP] Embed Pods Frameworks */,
+				4698063DF2C88CAE9700C1AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +158,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB39FEFD201F0FC600EE7051 /* Podfile in Resources */,
 				EB1D1491201D4A5E0055276C /* Assets.xcassets in Resources */,
 				EB1D1494201D4A5E0055276C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4698063DF2C88CAE9700C1AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bravo/Pods-bravo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D941C14D31421FF81BAAC5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bravo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB98EDBDFF7EC822EF354124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bravo/Pods-bravo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PlainPing/PlainPing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlainPing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bravo/Pods-bravo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB1D1487201D4A5E0055276C /* Sources */ = {
@@ -146,7 +228,6 @@
 				EB1D149F201D9DDF0055276C /* LatencyAPI.swift in Sources */,
 				EB1D149D201D98F10055276C /* StatusMenuController.swift in Sources */,
 				EB1D148F201D4A5E0055276C /* AppDelegate.swift in Sources */,
-				EB1D14A2201DBEF80055276C /* SimplePing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +353,7 @@
 		};
 		EB1D149A201D4A5E0055276C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F503401561EE35E6BD49A3 /* Pods-bravo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -290,6 +372,7 @@
 		};
 		EB1D149B201D4A5E0055276C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685974F135B148123E29C893 /* Pods-bravo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
